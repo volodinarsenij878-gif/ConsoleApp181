@@ -1,0 +1,27 @@
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    namespace Program32
+    {
+    internal class Program
+    {
+        static void Main()
+        {
+            Console.Write("Введите число: ");
+            if (int.TryParse(Console.ReadLine(), out int n))
+            {
+                if (n % 2 == 0 && n % 7 == 0)
+                    Console.WriteLine("Кратно 14");
+                else
+                    Console.WriteLine("Не кратно 14");
+            }
+            else
+            {
+                Console.WriteLine("Ошибка ввода.");
+            }
+        }
+    }
+    }
